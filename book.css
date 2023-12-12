@@ -1,0 +1,428 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.header_1{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./background-4.jpg);
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    min-height: 100px;
+}
+
+
+.contact{
+    float: right;
+    margin-top: 0.4cm;
+    margin-right: 40px;
+    text-align: right;
+    color: #ffffff;
+}
+
+.contact hr{
+    border: none;
+    background-color: #fff;
+    content:none;
+    width: 620px;
+    height: 1px;
+
+}
+
+.title-1{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.title-1 h1{
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    color: #ffffff;
+    font-size: 50px;
+}
+
+.title-1 h6{
+    color: #ffffff;
+    font-size: 25px;
+    padding-top:30px;
+    text-align: center;
+}
+
+nav ul{
+    float:right;
+    list-style-type: none;
+    min-height: 100px;
+    margin-top: 17px;
+    font-size: 18px;
+    margin-right: 15px;  
+    display: block;
+    
+}
+.nav-1{
+    display: inline-block;
+    border-right: 2px solid rgba(255,255,255);
+}
+
+nav ul li{
+    display:inline-block;
+    
+}
+
+nav ul li :last-child{
+    border-right: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px 28px;
+    border: 1px solid transparent;
+    
+}
+
+nav ul li a:hover{
+    background-color: #ffffff;
+    transition:0.5s;
+    color: #000000;
+    border-radius: 20px;
+}
+
+.logo{
+    float: left;
+    width: 13%;
+    height: auto;
+    margin-top: 0.4cm;
+    margin-left:0.4cm;
+}
+
+/* Add this media query at the end of your existing CSS */
+
+@media only screen and (max-width: 768px) {
+    /* Styles for tablets and smaller screens */
+
+    .header_1 {
+        height: auto;
+    }
+
+    .contact {
+        float: none;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .contact hr {
+        width: 100%;
+    }
+
+    .title-1 {
+        position: relative;
+        top: initial;
+        left: initial;
+        transform: none;
+        text-align: center;
+    }
+
+    .title-1 h1 {
+        font-size: 40px;
+    }
+
+    .title-1 h6 {
+        font-size: 20px;
+        padding-top: 15px;
+    }
+
+    nav ul {
+        float: none;
+        text-align: center;
+        margin: 15px 0;
+    }
+
+    .nav-1 {
+        display: block;
+        border-right: none;
+        margin-bottom: 5px;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    nav ul li a {
+        padding: 5px 10px;
+    }
+
+    .logo {
+        float: none;
+        margin: 10px auto;
+        display: block;
+        width: 15%;
+    }
+}
+
+  
+
+
+
+/* book header */
+
+.book-header{
+    background-image:url(./back1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
+  
+h1 {
+    padding-top: 20px;
+    text-align: center;
+    color: #0066cc;
+}
+  
+.book-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+  
+fieldset {
+    border: 2px solid #000000;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.adventureBook,
+.hotelBook{
+    text-align: center;
+    font-size: 20px;
+    color: #0b78e5;
+}
+  
+.mainSet{
+    border: 3px solid #ffffff;
+    
+}
+legend {
+    font-weight: bold;
+    color: #0066cc;
+}
+  
+label {
+    display: inline-block;
+    width:auto;
+}
+  
+.room,
+.facilit,
+.adven{
+    width: 50%;
+    padding: 8px;
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+    padding: 8px;
+    margin-bottom: 10px;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="number"]{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+   
+button {
+    background-color: #0066cc;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+button:hover {
+    background-color: #004080;
+}
+  
+.totalOutput{
+    text-align: center;
+}
+
+#numofDays{
+    width: 9em;
+    height: 1.3em;
+    border: black solid 1px;
+    border-radius: 5px;
+    text-align: center;
+}
+  
+#output1,
+#output2,
+#output3 {
+    font-weight: bold;
+    margin: 10px 0;
+}
+  
+#continueButton,
+#favouriteButton {
+    background-color: #4caf50;
+}
+
+#colomboBranch,
+#negomboBranch,
+#galleBranch{
+   width: 10%;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .book-1 {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/* footer */
+
+.container{
+    background-image: url(./footer-background.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 20px;
+}
+
+.footer-col ul{
+    list-style: none;
+    position: relative;
+}
+
+.footer-col h4{
+    color: #ffffff;
+    margin-bottom: 25px;
+    font-size: 22px;
+    position: relative;
+    font-family: 'ubuntu',sans-serif;
+}
+
+.footer-col h4::before{
+    content: '';
+    width: 70px;
+    height: 2px;
+    position:absolute;
+    background-color: #e91e64;
+    bottom: -10px;
+}
+
+.footer-col ul li{
+    padding: 10px 0;
+    color: #ffffff;
+    font-size: 15px;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footer-col ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footer-col ul li a:hover{
+    color: #f70539;
+}
+
+.footer-col input{
+    border: none;
+    width: 250px;
+    height: 40px;
+    display: block;
+    padding-left: 20px;
+    margin: 14px 0;
+
+}
+
+.footer-col .inputemail{
+    border-radius: 10px;
+
+}
+
+.footer-col .inputsubmit{
+    padding: 0 20px;
+    width: auto;
+    border-radius: 30px;
+    background-color: red;
+    border: none;
+    color: #ffffff;
+}
+
+.footer-col img{
+    width: 150px;
+    height: auto;
+   padding-bottom: 40px;
+}
+
+.socials a{
+    width: 40px;
+    height: 40px;
+    padding: 2px 10px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.socials a:hover{
+    color: #fd044f;
+}
+
+.footer-col {
+    flex: 1 1 100%; 
+    margin-bottom: 20px; 
+}
+
+@media only screen and (min-width: 600px) {
+    .row {
+        padding: 40px 50px;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .footer-col {
+        flex: 1 1 24%; /
+    }
+}
+

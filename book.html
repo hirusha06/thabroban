@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/644013a29b.js"></script>
+    <title>Booking Page</title>
+    <link rel="stylesheet" href="./book.css">
+    <script src="./main.js" defer></script>
+</head>
+<body class="book-body">
+  <!-- navigation -->
+
+
+    <header class="book-header">
+        
+          <a href="index.html"><img class="logo" src="./logo2.png" alt="logo"></a>
+
+          <div class="contact">
+             <h5>Contact : +94761180204</h5>
+             <hr>
+          </div>
+
+
+         <nav class="nav">
+          <ul>
+            <li class="nav-1"><a href="index.html">Home</a></li>
+            <li class="nav-1"><a href="branch.html">Hotels</a></li>
+            <li class="nav-1"><a href="adventures.html">Adventures</a></li>
+            <li class="nav-1"><a href="restuarant.html">Restuarants</a></li>
+            <li><a href="#">About us</a></li>
+              
+          </ul>
+         </nav>
+         <div class="title-1">
+          <h1>Book Now</h1>
+          <h6>Enjoy your holidays at the Thaproban Pavilion Waves</h6>
+         </div>
+    </header>
+
+  <!--booking-->
+  
+  <div>
+    <div class="book-1">
+        <div>
+          <fieldset class="mainSet">
+            <legend class="hotelBook">Hotel Book</legend>
+            <fieldset>
+                <legend>Personal Information : </legend>
+                <p>
+                  <label for="fullName">Name : </label>
+                  <input type="text" id="fullName" placeholder="Enter Full Name" required>
+                  <label for="contactnum">Contact Number : </label>
+                  <input type="tel" id="contactnum" placeholder="Enter Phone Number" required>
+                </p>
+                <p>
+                  <label for="emailAddress">Email Address : </label>
+                  <input type="email" id="emailAddress" placeholder="Enter Email Address">
+                  <label for="countryName">Country : </label>
+                  <input type="text" id="countryName" placeholder="Country">
+
+                </p>
+            </fieldset>
+            <fieldset>
+              <legend>Room Type</legend>
+              <label class="room">Single</label>
+              <input type="radio" name="roomType" id="singleRoom" value="singleRoom">
+              <label class="room">Double</label>
+              <input type="radio" name="roomType" id="doubleRoom" value="doubleRoom">
+              <label class="room">Triple</label>
+              <input type="radio" name="roomType" id="tripleRoom" value="tripleRoom">
+              <label class="room"> Extra Bed </label>
+              <input type="checkbox" name="roomType" id="extraBed" value="extraBed"><br>
+              <label class="numofRooms">Number of Rooms :</label>
+              <input type="number" min="1" max="15" name="roomType" id="numberRooms" value="1" class="duration">
+          </fieldset>
+
+          <fieldset>
+            <legend>Branch : </legend>
+                    <input type="radio" name="branchName" id="colomboBranch" value="colombo" class="branchClass">
+                    <label for="colomboBranch">Colombo </label>
+                    <input type="radio" name="branchName" id="negomboBranch" value="negombo" class="branchClass">
+                    <label for="negomboBranch">Negombo </label>
+                    <input type="radio" name="branchName" id="galleBranch" value="galle" class="branchClass">
+                    <label for="galleBranch">Galle </label>
+          </fieldset>
+
+          <fieldset class="numOf">
+            <p>Noted: LKR 10,000 per meal for adults and extra LKR 5,000 will be added for Kids above 5 years of age</p>
+            <p>
+              <label>Number of Adults : </label>
+              <input type="number" name="numpeople" id="numAdults" min="1" value="1" required>
+            </p>
+            <p>
+              <label class="childrenNum">Number of Children (Below 5 years of age): </label>
+              <input type="number" name="numpeople" id="numChildrenBelow" min="0" value="0">
+            </p>
+            <p>
+              <label class="childrenNum">Number of Children (Above 5 years of age): </label>
+              <input type="number" name="numpeople" id="numChildrenAbove" min="0" value="0">
+            </p>
+          </fieldset>
+
+          <fieldset>
+            <p>
+              <label class="duration" for="checkIn">Check-In : </label>
+              <input type="date" id="checkIn" name="duration" required>
+              <label class="duration" for="checkOut">Check-Out : </label>
+              <input type="date" id="checkOut" name="duration"required>
+              <span>
+                  <label id="numofDays">Number of Days</label>
+              </span>
+          </p>
+          </fieldset>
+
+          <fieldset>
+           <legend>Extra Requirements : </legend>
+           <p>
+            <label class="facilit">WIFI</label>
+            <input type="checkbox" name="extraFacilit" id="wifi" value="wifi">
+           </p>
+          </fieldset>
+
+          <fieldset>
+           <legend>Different Pool Views : </legend>
+            <p>
+            <label class="facilit">Pool View</label>
+            <input type="radio" name="extraFacilit" id="poolView" value="poolView">
+            <label class="facilit">Garden View</label>
+            <input type="radio" name="extraFacilit" id="gardenView" value="gardenView">
+           </p>
+          </fieldset> 
+
+          <fieldset>
+           <p>
+            <label>Promo Code : </label>
+            <input type="text" id="promocode">
+           </p>
+          </fieldset>
+           <div>
+            <button type="button" id="bookButton">Book Now</button>
+            <button type="button" id="resetForm">Reset Form</button>
+            <button type="button" id="checkLoyaltyBtn">Check Loyalty</button>
+            
+          </div>
+
+
+        </fieldset>  
+       </div>
+
+
+
+        <div>
+          <fieldset class="mainSet">
+            <legend class="adventureBook">Adventure Booking</legend>
+            <fieldset>
+              <legend>Personal Information : </legend>
+              <p>
+                <label for="fullName">Name : </label>
+                <input type="text" id="fullName2" placeholder="Enter Full Name" required>
+                <label for="contactnum">Contact Number : </label>
+                <input type="tel" id="contactnum2" placeholder="Enter Phone Number" required>
+              </p>
+              <p>
+              <label for="emailAddress">Email Address : </label>
+              <input type="email" id="emailAddress2" placeholder="Enter Email Address">
+              <label for="countryName">Country : </label>
+              <input type="text" id="countryName2" placeholder="Country"><br>
+              </p>
+          </fieldset>
+
+          <fieldset>
+            <legend>Branch : </legend>
+                    <input type="radio" name="branchName" id="colomboBranch2" value="colombo" class="branchClass">
+                    <label for="colomboBranch">Colombo </label>
+                    <input type="radio" name="branchName" id="negomboBranch2" value="negombo" class="branchClass">
+                    <label for="negomboBranch">Negombo </label>
+                    <input type="radio" name="branchName" id="galleBranch2" value="galle" class="branchClass">
+                    <label for="galleBranch">Galle </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Adventure : </legend>
+
+            <u><h4>Customize Adventure</h4></u><br>
+            <p>
+              <label class="adven">Diving for local Adults (1 hr) </label>
+              <input type="checkbox" name="adventures" id="localAdults" value="localAdults">
+            </p>
+            <p>
+              <label class="adven">Diving for local kids (above 5 years)</label>
+              <input type="checkbox" name="adventures" id="localKids" value="localKids"> 
+            </p>
+            <p>
+              <label class="adven">Diving for foreign adults </label>
+              <input type="checkbox" name="adventures" id="foreignAdults" value="foreignAdults">
+            </p>
+            <p>
+              <label class="adven">Diving for foreign kids</label>
+              <input type="checkbox" name="adventures" id="foreignKids" value="foreignKids">
+            </p><br>
+             <label class="guideselection">If in need for a guide during the diving session</label>
+            <p>
+              <label class="adven">Adult (1000LKR extra will be charged)</label>
+              <input type="checkbox" name="guideDiving" id="guideAdults" value="guideAdults">
+            </p>
+            <p>
+              <label class="adven">Kids (500LKR extra will be charged) </label>
+              <input type="checkbox" name="guideDiving" id="guideKids" value="guideKids">
+            </p>
+            
+        </fieldset>
+
+        <fieldset>
+          <legend>Current Cost</legend>
+            <p id="currentCost"></p>
+            <p id="output-2"></p>
+            <p id="output-3"></p>
+            <p id="output-4"></p>
+            <p id="output-5"></p>
+            <p id="output-6"></p>
+            <p id="output-7"></p>
+                
+      </fieldset>
+
+           <div>
+            <button type="button" id="bookAdventure">Book Adventure</button>
+            <button type="button" id="checkAdventure">Check Favourite</button>
+            <button type="button" id="resetAdventure">Reset Form</button>
+            
+          </div>
+
+          
+      </fieldset>
+        </div>
+    </div>
+    <div class="totalOutput" id="fullCost">
+      <fieldset>
+          <legend>Total</legend>
+          <p id="roomdetails"></p>
+          <p id="adventuredetails"></p>
+          <button type="button" id="continueButton">Continue</button>
+          <button type="button" id="favouriteButton">Add to Favourite</button>
+        
+      </fieldset>
+    </div>
+   
+  </div>
+
+
+
+  <!--footer-->  
+    <footer>
+        <div class="container">
+          <div class="row">
+  
+            <div class="footer-col">
+              <img src="./logo2.png" alt="logo">
+              <h4>Newsletter</h4>
+              <form class="newsletter">
+                <input type="email" placeholder="Enter your email" class="inputemail">
+                <input type="submit" value="Submit" class="inputsubmit">
+              </form>
+            </div>
+  
+            <!-- 2nd column -->
+  
+            <div class="footer-col">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="branch.html">Hotels</a></li>
+                <li><a href="adventures.html">Adventures</a></li>
+                <li><a href="restuarant.html">Restuarants</a></li>
+                <li><a href="even1.html">Wedding</a></li>
+                <li><a href="even2.html">Meeting</a></li>
+                <li><a href="#">About us</a></li>
+              </ul>
+            </div>
+  
+            <!-- 3nd column -->
+            <div class="footer-col">
+              <h4>Contat info</h4>
+              <ul>
+                <li><i class="fa-solid fa-location-dot"></i>  Wella Devala Road,SriLanka.</li>
+                <li><i class="fa-solid fa-phone"></i>  +94 912 228 351</li>
+                <li><i class="fa-solid fa-phone"></i>  +94 914 944 184</li>
+                <li><i class="fa-solid fa-envelope"></i>  thaproban@gmail.com</li>
+                
+                
+              </ul>
+            </div>
+  
+            <!-- 4rd column -->
+            <div class="footer-col">
+              <h4>Follow us</h4>
+                <div class="socials">
+                  <a href="https://www.facebook.com/thaprobanpavilionwaves/"><i class="fa fa-facebook"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="https://www.youtube.com/watch?v=40BgdnJhtrE&t=1s"><i class="fa fa-youtube"></i></a>
+                  <a href="#"><i class="fa fa-tumblr"></i></a>
+                </div>
+              
+            </div>
+          </div>
+        </div>
+      </footer>
+
+</body>
+</html>
+   
